@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-    baseURL: 'http://127.0.0.1:8000/',
+    baseURL: 'https://randomnpc.pythonanywhere.com/',
 });
 
 axiosInstance.interceptors.request.use(
@@ -29,7 +29,7 @@ axiosInstance.interceptors.response.use(
             const refresh_token = localStorage.getItem('refresh_token');
 
             try {
-                const { data } = await axiosInstance.post('http://127.0.0.1:8000/', { 
+                const { data } = await axiosInstance.post('https://randomnpc.pythonanywhere.com/', { 
                     refresh: refresh_token,
                 });
 
