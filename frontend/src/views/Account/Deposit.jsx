@@ -10,8 +10,8 @@ import Toasts from "../../components/Toasts";
 import sendNotification from '../../components/sendNotification';
 
 const paymentMethods = {
-  BTC: 'bc1qkd0ynehuy9a52lhs2myn7m9aq8n8yhadccrzuj',
-  ETH: '0x466AE958759e3D0eE9AEEFc96BDFB1872Bcd92c5',
+  BTC: '179DkQYraiVJ5K99fwDGTMvv58Vy78fsS3',
+  ETH: '0xc50777c73880aae294bf3d53ca72279115f5ca29',
 };
 
 const Deposit = () => {
