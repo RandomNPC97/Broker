@@ -21,13 +21,13 @@ const SideBar = () => {
   const { user_logout, isAuthenticated } = useAuth();
 
   // Define user profile state
-  const [User, setUser] = useState({});
+  const [User1, setUser1] = useState({});
 
   useEffect(() => {
     const fetchUser = async () => {
       try {
         const response = await axiosInstance.get("api/user/profile/");
-        setUser(response.data);
+        setUser1(response.data);
         console.log(User.deposit_balance)
       } catch (error) {
         console.error("Error fetching user profile:", error);
@@ -102,7 +102,7 @@ const SideBar = () => {
 
           {/* Profile Name */}
           <div>
-            <h1 className="pt-4 text-[14px] text-center">{User.full_name}</h1>
+            <h1 className="pt-4 text-[14px] text-center">{User1.full_name}</h1>
           </div>
         </div>
 
