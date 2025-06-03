@@ -20,10 +20,18 @@ const SideBar = () => {
   const { user_logout, isAuthenticated } = useAuth();
 
   // Define user profile state
-  const [userProfile, setUserProfile] = useState({
-    full_name: 'John Doe',
-    profile_pic: '',
-  });
+  const [User, setUser] = useState({});
+
+  useEffect(() => {
+    const fetchUser = async () => {
+      try {
+        const response = await axiosInstance.get("api/user/profile/");
+        setUser(response.data);
+        console.log(User.deposit_balance)
+      } catch (error) {
+        console.error("Error fetching user profile:", error);
+      }
+    };
 
   // Handle image upload
   const handleImageUpload = (event) => {
