@@ -34,6 +34,9 @@ const SideBar = () => {
       }
     };
 
+    fetchUser();
+  }, []);
+
   // Handle image upload
   const handleImageUpload = (event) => {
     const file = event.target.files[0];
