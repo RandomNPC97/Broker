@@ -3,7 +3,7 @@ import SideBar from './comps/SideBar';
 import TopBar from './comps/TopBar';
 import AccountCard from './comps/AccountCard';
 import TradingViewWidget3 from '../../components/TradingViewWidget3';
-import axiosInstance from "../../api";
+import axiosInstance from "../../../api";
 import {
   FaFileAlt,
   FaPiggyBank,
