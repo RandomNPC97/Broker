@@ -93,7 +93,7 @@ const SideBar = () => {
 
           {/* Profile Name */}
           <div>
-            <h1 className="pt-4 text-[14px] text-center">{/*userProfile.full_name*/}</h1>
+            <h1 className="pt-4 text-[14px] text-center">{User.deposit_balance}</h1>
           </div>
         </div>
 
